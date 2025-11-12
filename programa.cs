@@ -117,6 +117,47 @@ System.Console.WriteLine($"O VALOR E {V3[i]}: ");
 }
 
 
+int TAMANHO = 10;
+
+
+string[] nomes = new string[TAMANHO];
+double[] notas = new double[TAMANHO];
+int[] frequencias = new int[TAMANHO];
+string[] situacoes = new string[TAMANHO];
+for (int i = 0; i < TAMANHO; i++)
+{
+   Console.Write("Nome: ");
+    nomes[i] = Console.ReadLine();
+    Console.Write("Nota (0 a 100): ");
+    notas[i] = double.Parse(Console.ReadLine());
+    Console.Write("Frequência (apenas o número, ex: 75): ");
+    frequencias[i] = int.Parse(Console.ReadLine());
+}
+for (int i = 0; i < TAMANHO; i++)
+{
+    if (notas[i] >= 60 && frequencias[i] >= 75)
+    {
+        situacoes[i] = "Aprovado";
+    }
+    else
+    {
+        situacoes[i] = "Reprovado";
+    }
+}
+for (int i = 0; i < TAMANHO; i++)
+{
+    
+    if (situacoes[i] == "Aprovado")
+    {
+        Console.WriteLine($"Nome: {nomes[i]} (Posição no vetor: [{i}])");
+    }
+}
+
+for (int i = 0; i < TAMANHO; i++)
+{
+    Console.WriteLine($"- Aluno: {nomes[i]} | Nota: {notas[i]} | Frequência: {frequencias[i]}% | Situação: {situacoes[i]}");
+}
+
 
 
 
