@@ -12,7 +12,7 @@ for (int i = 0; i < V.Length; i++)
     V[i] = int.Parse(Console.ReadLine());
 }
  
-Console.WriteLine($"O conteúdo do vetor é:{} ");*/
+Console.WriteLine($"O conteúdo do vetor é:{} ");
 
 
 
@@ -38,5 +38,39 @@ Console.WriteLine($"a soma dos elementos e: {soma}");
 
 Console.WriteLine($"a media dos elementos e: {soma/n}");
 
-Console.ReadLine();
+Console.ReadLine();*/
+
+int count = 0, n;
+Console.Write("Informe o tamanho do vetor (n): ");
+n = int.Parse(Console.ReadLine());
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    Console.Write("Escreva os números do vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < V.Length; i++)
+{
+
+    for (int j = 0; j < V.Length; j++)
+    {
+        if (V[i] == V[j])
+            count++;
+    }
+    Console.WriteLine($"O valor {V[i]} aparece {count} vezes");
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
