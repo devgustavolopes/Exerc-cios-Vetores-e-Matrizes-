@@ -82,6 +82,41 @@ for (int i = 0; i < n; i++)
 Console.Write($"A quantidade de números impares é: {impar} ");
 Console.Write($"A quantidade de números pares é: {par} ");
 
+int n;
+System.Console.WriteLine("informe o valor dos vetores:");
+n = int.Parse(Console.ReadLine());
+int[] V1 = new int[n];
+int[] V2 = new int[n];
+string[] V3 = new string[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("escreva um valor para[V1]:");
+    V1[i] = int.Parse(Console.ReadLine());
+}
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("escreva um valor para[V2]:");
+    V2[i] = int.Parse(Console.ReadLine());
+}
+for (int i = 0; i < n; i++)
+{
+    if (V1[i] > V2[i])
+    {
+        V3[i] = "Maior";
+    }
+    else if (V1[i] < V2[i])
+    {
+        V3[i] = "menor";
+    }
+    else
+    {
+        V3[i] = "igual";
+    }
+System.Console.WriteLine($"O VALOR E {V3[i]}: ");
+}
+
+
 
 
 
