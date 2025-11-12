@@ -40,7 +40,7 @@ Console.WriteLine($"a media dos elementos e: {soma/n}");
 
 Console.ReadLine();*/
 
-int count = 0, n;
+/*int count = 0, n;
 Console.Write("Informe o tamanho do vetor (n): ");
 n = int.Parse(Console.ReadLine());
 int[] V = new int[n];
@@ -61,8 +61,26 @@ for (int i = 0; i < V.Length; i++)
     }
     Console.WriteLine($"O valor {V[i]} aparece {count} vezes");
 
+}/*
+
+
+
+int n, impar = 0, par=0;
+Console.Write("Informe o tamanho do vetor (n): ");
+n = int.Parse(Console.ReadLine());
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    Console.Write("Informe os valores para prencher o vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+    if (V[i] % 2 == 0)
+        par++;
+    else impar++;
 }
 
+Console.Write($"A quantidade de números impares é: {impar} ");
+Console.Write($"A quantidade de números pares é: {par} ");
 
 
 
