@@ -61,7 +61,7 @@ for (int i = 0; i < V.Length; i++)
     }
     Console.WriteLine($"O valor {V[i]} aparece {count} vezes");
 
-}/*
+}
 
 
 
@@ -159,7 +159,105 @@ for (int i = 0; i < TAMANHO; i++)
 }
 
 
+//. Soma dos Elementos Faça um algoritmo em C# para: (a) ler um vetor V de números inteiros de tamanho n 
+//(informado pelo usuário); (b) calcular e mostrar a soma de todos os elementos do vetor V.
 
+int n, soma = 0, num;
+
+System.Console.WriteLine("Informe o tamanho do vetor(n): ");
+n = int.Parse(Console.ReadLine());
+
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("um valor a ser somado no vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+
+    soma = soma + V[i];
+    }
+
+    System.Console.WriteLine($"a soma dos valores do vetor é: {soma}");
+
+
+
+// Média dos Elementos Faça um algoritmo em C# para: (a) ler um vetor V de números reais de tamanho n 
+//(informado pelo usuário); (b) calcular e mostrar a média aritmética de todos os elementos do vetor V.
+
+using System.Runtime.InteropServices;
+
+int n, media = 0, soma = 0;
+
+System.Console.WriteLine("Informe o tamanho do vetor(n): ");
+n = int.Parse(Console.ReadLine());
+
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("informe um valor para o vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+
+    soma = soma + V[i];
+    media = soma/n;
+}
+
+System.Console.WriteLine($"a media dos valores e: {media} ");
+
+
+//3.Encontrar o Maior Elemento Faça um algoritmo em C# para: (a) ler um vetor V de números inteiros de tamanho n
+//(informado pelo usuário); (b) encontrar e mostrar o maior elemento presente no vetor V e a posição (índice i) onde ele foi encontrado.
+
+int n, posicaomaior=0;
+System.Console.WriteLine("Informe o tamanho do vetor(n): ");
+n = int.Parse(Console.ReadLine());
+
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("informe um valor para o vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+}
+int maior = V[0];
+for (int i = 0; i < n; i++)
+{
+if (V[i] > maior)
+maior = V[i];
+posicaomaior = i + 1;
+}
+
+System.Console.WriteLine($"o maior valor e: {maior} na posiçao {posicaomaior} ");
+
+//4. Encontrar o Menor Elemento Faça um algoritmo em C# para: (a) ler um vetor V de números inteiros de tamanho n (informado pelo usuário);
+//(b) encontrar e mostrar o menor elemento presente no vetor V e a posição (índice i) onde ele foi encontrado.
+
+using System.Security.Principal;
+
+int n,posicaoMenor = 0;;
+System.Console.WriteLine("Informe o tamanho do vetor(n): ");
+n = int.Parse(Console.ReadLine());
+
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("informe um valor para o vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+}
+int menor = V[0];
+
+for (int i = 0; i < n; i++)
+{
+    if (V[i] < menor)
+        menor = V[i];
+    posicaoMenor = i + 1;
+}
+System.Console.WriteLine($"o maior valor e: {menor} na posiçao {posicaoMenor} ");*/
+
+//5. Multiplicação por Constante Faça um algoritmo em C# para: (a) ler um vetor V de números inteiros de tamanho n (informado pelo usuário); (b) 
+//ler um número inteiro x; (c) criar um vetor VC (vetor calculado)onde cada elemento VC[i] é igual ao elemento V[i] multiplicado por x; 
+//(d) mostrar o conteúdo do vetor VC.*?
 
 
 
