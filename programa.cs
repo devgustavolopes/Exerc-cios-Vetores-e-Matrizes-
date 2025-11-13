@@ -253,12 +253,37 @@ for (int i = 0; i < n; i++)
         menor = V[i];
     posicaoMenor = i + 1;
 }
-System.Console.WriteLine($"o maior valor e: {menor} na posiçao {posicaoMenor} ");*/
+System.Console.WriteLine($"o maior valor e: {menor} na posiçao {posicaoMenor} ");
 
 //5. Multiplicação por Constante Faça um algoritmo em C# para: (a) ler um vetor V de números inteiros de tamanho n (informado pelo usuário); (b) 
 //ler um número inteiro x; (c) criar um vetor VC (vetor calculado)onde cada elemento VC[i] é igual ao elemento V[i] multiplicado por x; 
-//(d) mostrar o conteúdo do vetor VC.*?
+//(d) mostrar o conteúdo do vetor VC.
+System.Console.WriteLine("Informe o tamanho do vetor(n): ");
+n = int.Parse(Console.ReadLine());
 
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("informe um valor para o vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+}
+System.Console.WriteLine("informe o valor de x: ");
+    x = int.Parse(Console.ReadLine());
+
+int [] VC = new int [n];
+for (int i =0; i< n; i++)
+{
+    VC[i] = V[i] * x;
+
+    multiplicado = VC[i];
+
+}
+for(int i = 0; i< n ; i++)
+{
+    
+Console.WriteLine($"Posição [{i}]: {VC[i]}");*/
+}
 
 
 
