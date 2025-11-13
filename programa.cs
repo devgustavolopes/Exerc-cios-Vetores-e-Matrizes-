@@ -282,8 +282,31 @@ for (int i =0; i< n; i++)
 for(int i = 0; i< n ; i++)
 {
     
-Console.WriteLine($"Posição [{i}]: {VC[i]}");*/
+Console.WriteLine($"Posição [{i}]: {VC[i]}");
 }
+
+//6. Contagem de Pares
+//Faça um algoritmo em C# para:
+//(a) ler um vetor V de números inteiros de tamanho n (informado pelo usuário);
+//(b) contar e mostrar quantos elementos do vetor V são pares.
+
+int n,par=0;
+System.Console.WriteLine("Informe o tamanho do vetor(n): ");
+n = int.Parse(Console.ReadLine());
+
+int[] V = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    System.Console.WriteLine("informe um valor para o vetor: ");
+    V[i] = int.Parse(Console.ReadLine());
+
+    if (V[i] % 2 == 0)
+    par++;
+
+}
+System.Console.WriteLine($"a quantindade de pares e: {par}");*/
+
 
 
 
